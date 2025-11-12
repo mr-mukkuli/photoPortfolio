@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Photography Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="index.html" class="logo">Portfolio</a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Work</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <section class="contact-page">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h1 class="page-title">
+                        <span class="title-line">Let's Create</span>
+                        <span class="title-line">Something Beautiful</span>
+                    </h1>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-form-section">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" id="name" name="name" class="form-input" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" name="email" class="form-input" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="project" class="form-label">Project Type</label>
+                                <select id="project" name="project" class="form-input">
+                                    <option value="">Select a project type</option>
+                                    <option value="portrait">Portrait Sessions</option>
+                                    <option value="landscape">Travel & Adventure</option>
+                                    <option value="commercial">Brand & Product Shots</option>
+                                    <option value="event">Events & Gatherings</option>
+                                    <option value="prints">Prints & Art</option>
+                                    <option value="workshop">Consultancy</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-input form-textarea" rows="3"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="form-button">Send Message</button>
+
+                            <div class="form-status" id="formStatus"></div>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-section">
+                        <div class="contact-info-block">
+                            <h3 class="info-heading">Get in Touch</h3>
+                            <div class="info-items">
+                                <div class="info-item">
+                                    <span class="info-label">Email</span>
+                                    <a href="mailto:hello@photographer.com" class="info-link">moe@photographer.com</a>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Phone</span>
+                                    <a href="tel:+0953150358" class="info-link">+260 (953) 150-358</a>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Location</span>
+                                    <span class="info-text">Lusaka, Zambia.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-block">
+                            <h3 class="info-heading">Availability</h3>
+                            <p class="availability-text">
+                                Currently accepting new projects for 2025. Response time typically within 24-48 hours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>Designed & Built by Milimo Mukkuli</p>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Behance</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>
